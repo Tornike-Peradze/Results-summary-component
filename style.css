@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/*
+    Mobile version 
+*/
+
+/*
+  ========================================
+    Body 
+  ========================================
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 30px;
+}
+
+/*
+  ========================================
+    Main 
+  ========================================
+*/
+
+.main{
+    width: 100%;
+}
+
+/*
+  ========================================
+    UPPER div, which contains blue part of object 
+  ========================================
+*/
+.upper {
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    min-height: 356px;
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: 0px 0px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #CAC9FF;
+    padding-top: 24px;
+}
+
+.score{
+    margin-top: 24px;
+    min-width: 140px;
+    min-height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.score:hover{
+    transform: rotate(360deg); 
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-size: larger;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+    color: white;
+}
+
+.total{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #CAC9FF;
+    mix-blend-mode: normal;
+    opacity: 0.52;
+}
+
+.hooray{
+    padding-top: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.explanation{
+    padding-top: 8px;    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #CAC9FF;
+    text-align: center;
+    width: 260px;
+}
+
+/*
+  ========================================
+    Bottom div with, everything besides blue part 
+  ========================================
+*/
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom > .summary{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #303B59;
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-bottom: 24px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.box{
+    min-width: 315px;
+    min-height: 56px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    padding-left: 20.17px;
+}
+
+.additive{
+    padding: 17px 16.17px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.one {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+}
+
+.two {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+}
+
+.three {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+}
+
+.four {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+}
+
+.first{
+    color: #FF5555;
+}
+
+.second{
+    color: #FFB21E;
+}
+
+.third{
+    color: #00BB8F;
+}
+
+.fourth{
+    color: #1125D6;
+}
+
+.others{
+    display: flex;
+    flex-direction: row;
+    padding: 17px 18px 17px 0;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #303B59;
+    padding-right: 8px;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #303B59;
+    opacity: 50%;
+}
+/*
+  ========================================
+    Continue button 
+  ========================================
+*/
+.ending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width:  315px;
+    min-height: 56px;
+    background: #303B59;
+    border-radius: 128px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+    Desktop Version 
+*/
+
+@media screen and (min-width: 1440px) {
+    
+    /*
+    ========================================
+        Body 
+    ========================================
+    */
+    body{
+        background-color: #ECF2FF;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    /*
+    ========================================
+        Main 
+    ========================================
+    */
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: top;
+        width: 736px;
+        height: 512px;
+        background: #FFFFFF;
+        box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+        border-radius: 32px;
+        padding: none;
+    }
+    /*
+    ========================================
+        Upper div 
+    ========================================
+    */
+    .upper{
+        width: 368px;
+        height: 512px;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .result{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        padding-top: 38px;
+    }
+
+    .score{
+        width: 200px;
+        height: 200px;
+    }
+
+    h1{
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 72px;
+    }
+
+    .total{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .hooray{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        padding-top: 28px;
+    }
+
+    .explanation{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        padding-top: 14px;
+    }
+    /*
+    ========================================
+        Bottom div 
+    ========================================
+    */
+    .bottom{
+        margin: 40px auto;
+        padding: 0;
+    }
+
+    .bottom > .summary{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 0 0 0;
+        text-align: left;
+        vertical-align: baseline;
+        margin-bottom: 28px;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer:hover{
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);;
+    }
+
+}

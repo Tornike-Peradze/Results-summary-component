@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frontend Mentor | Results summary component</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="reset" href="./reset.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="main"> <!--Main div which combines every component in it-->
+    
+    <div class="upper"> <!--UPPER div which contains blue part of object-->
+      <h2 class="result">Your Result </h2>
+      <div class="score">
+        <h1>76</h1>
+        <p class="total">of 100</p>
+      </div>
+      
+      <h2 class="hooray">Great</h2>
+      <p class="explanation">Your performance exceed 65% of the people conducting the test here!</p>
+    </div>
+
+    <div class="bottom"> <!--Bottom div which contains everything behind/right to left window-->
+      <h2 class="summary">Summary</h2>
+  
+      <div class="details"><!--This created for 4 rectangular-->
+    
+        <div class="box one">
+          <div class="flex">
+              <img class="icon" src="./assets/images/icon-reaction.svg" />
+              <h3 class="additive first">Reaction</h3>
+          </div>
+          <div class="others">
+            <h4>80</h4>
+            <h5>/ 100</h5>
+          </div>
+        </div>
+        
+        <div class="box two">
+          <div class="flex">
+            <img class="icon" src="./assets/images/icon-memory.svg" />
+            <h3 class="additive second">Memory</h3>
+          </div>  
+          <div class="others">
+            <h4>92</h4>
+            <h5>/ 100</h5>
+          </div>
+        </div>
+        
+        <div class="box three">
+          <div class="flex">
+            <img class="icon" src="./assets/images/icon-verbal.svg" />
+            <h3 class="additive third">Verbal</h3>
+          </div>
+          <div class="others">
+            <h4>61</h4>
+            <h5>/ 100</h5>
+          </div>
+        </div>
+        
+        <div class="box four">
+          <div class="flex">
+            <img class="icon" src="./assets/images/icon-visual.svg" />
+            <h3 class="additive fourth">Visual</h3>
+          </div>
+          <div class="others">
+            <h4>73</h4>
+            <h5>/ 100</h5>
+          </div>
+        </div>
+  
+      </div>
+      
+      <div class="ending">
+        <div class="footer">Continue</div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
